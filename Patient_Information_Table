@@ -1,0 +1,13 @@
+create table Patient_Information (
+	patient_mrn INT,
+	patient_firstname VARCHAR(50),
+	patient_lastname VARCHAR(50),
+	patient_address VARCHAR(100),
+	patient_city VARCHAR(50),
+	patient_zip_code VARCHAR(50),
+	patient_state_province INT,
+	patient_gender VARCHAR(50),
+	patient_pronoun VARCHAR(50),
+	patient_dob VARCHAR(50),
+	PRIMARY KEY (patient_mrn)
+);

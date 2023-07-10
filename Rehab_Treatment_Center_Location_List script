@@ -1,0 +1,5 @@
+CREATE TABLE Rehab_Treatment_Center_Location_List (
+rehab_center_idcode INT NOT NULL,
+rehab_center_name VARCHAR(50) NOT NULL,
+PRIMARY KEY (rehab_center_idcode),
+);

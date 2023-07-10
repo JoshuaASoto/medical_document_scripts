@@ -1,0 +1,7 @@
+create table ACN (
+	ACN BIGINT NOT NULL,
+	patient_mrn INT NOT NULL,
+	acn_patient_admission_date DATE NOT NULL,
+        PRIMARY KEY (ACN)
+        FOREIGN KEY (patient_mrn) references Patient_Information(patient_mrn)
+	)

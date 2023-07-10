@@ -1,0 +1,6 @@
+CREATE TABLE psychiatric_medication_list (
+	psych_med_code int NOT NULL,
+	psych_med_generic_name VARCHAR (50)
+	PRIMARY KEY (psych_med_code)
+);
+

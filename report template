@@ -1,0 +1,8 @@
+select p.patient_firstname,p.Patient_lastname, p.patient_mrn , a.acn_patient_admission_date, a.ACN, q. twntyfour_depression, k.reason_self_danger
+from Patient_information as p
+inner join acn as a
+on p.patient_mrn = a.patient_mrn
+inner join Justification_24hr_care as q
+on a.acn = q.acn
+inner join Patient_admission_reason as k
+on a.acn = k.acn

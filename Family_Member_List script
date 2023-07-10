@@ -1,0 +1,5 @@
+CREATE TABLE Family_Member_List(
+family_member_idcode INT NOT NULL,
+family_member_relation VARCHAR (50) NOT NULL,
+PRIMARY KEY (family_member_idcode)
+);

@@ -1,0 +1,320 @@
+ CREATE TABLE Progress_Patient_Age_Status (
+
+	mse_check_pn_age_young BIT NOT NULL DEFAULT 0,
+	mse_check_pn_age_middle_aged BIT NOT NULL DEFAULT 0,
+	mse_check_pn_age_elderly BIT NOT NULL DEFAULT 0,
+	mse_check_pn_age_appears_stated_age BIT NOT NULL DEFAULT 0,
+	ACN BIGINT NOT NULL,
+);
+
+CREATE TABLE Progress_Patient_Weight_Status (
+
+	mse_check_pn_wt_average BIT NOT NULL DEFAULT 0 ,
+	mse_check_pn_wt_overweight BIT NOT NULL DEFAULT 0,
+	mse_check_pn_wt_obese BIT NOT NULL DEFAULT 0,
+	mse_check_pn_wt_underweight BIT NOT NULL DEFAULT 0,
+	ACN BIGINT NOT NULL,
+);
+
+CREATE TABLE Progress_Patient_Grooming_Status (
+
+	mse_check_pn_grm_well_cladded BIT NOT NULL DEFAULT 0,
+	mse_check_pn_grm_clumsy BIT NOT NULL DEFAULT 0,
+	mse_check_pn_grm_good_eyecontact BIT NOT NULL DEFAULT 0,
+	mse_check_pn_grm_bad_eyecontact BIT NOT NULL DEFAULT 0,
+	ACN BIGINT NOT NULL,
+);
+
+CREATE TABLE Progress_Patient_Gait_Status (
+
+	mse_check_pn_gait_normal BIT NOT NULL DEFAULT 0,
+	mse_check_pn_gait_awkward BIT NOT NULL DEFAULT 0 ,
+	mse_check_pn_gait_staggering BIT NOT NULL DEFAULT 0,
+	mse_check_pn_gait_shuffling BIT NOT NULL DEFAULT 0,
+	mse_check_pn_gait_rigid BIT NOT NULL DEFAULT 0,
+	mse_check_gn_gait_high_stepping BIT NOT NULL DEFAULT 0,
+	ACN BIGINT NOT NULL,
+);
+
+CREATE TABLE Progress_Patient_Posture_Status (
+
+	mse_check_pn_posture_normal BIT NOT NULL DEFAULT 0,
+	mse_check_pn_posture_stooped BIT NOT NULL DEFAULT 0,
+	mse_check_pn_posture_kyphosis BIT NOT NULL DEFAULT 0,
+	ACN BIGINT NOT NULL,
+);
+
+CREATE TABLE Progress_Patient_Attitude_Status (
+	
+	mse_check_pn_attit_calm BIT NOT NULL DEFAULT 0,
+	mse_check_pn_attit_cooperative BIT NOT NULL DEFAULT 0,
+	mse_check_pn_attit_uncooperative BIT NOT NULL DEFAULT 0,
+	mse_check_pn_attit_belligerent BIT NOT NULL DEFAULT 0,
+	mse_check_pn_attit_negativistic BIT NOT NULL DEFAULT 0,
+	mse_check_pn_attit_suspicous BIT NOT NULL DEFAULT 0,
+	mse_check_pn_attit_apathetic BIT NOT NULL DEFAULT 0,
+	mse_check_pn_attit_fearful BIT NOT NULL DEFAULT 0,
+	ACN BIGINT NOT NULL,
+);
+
+CREATE TABLE Progress_Patient_Thought_Content_Delusion_Status (
+
+	mse_check_pn_thoughtcont_del_paranoid BIT NOT NULL DEFAULT 0,
+	mse_check_pn_thoughtcont_del_persecutory BIT NOT NULL DEFAULT 0,
+	mse_check_pn_thoughtcont_del_control BIT NOT NULL DEFAULT 0,
+	mse_check_pn_thoughtcont_del_grandiose BIT NOT NULL DEFAULT 0,
+	mse_check_pn_thoughtcont_del_reference BIT NOT NULL DEFAULT 0,
+	mse_check_pn_thoughtcont_del_nihilistic BIT NOT NULL DEFAULT 0,
+	mse_check_pn_thoughtcont_del_jealousy BIT NOT NULL DEFAULT 0,
+	mse_check_pn_thoughtcont_del_guilt BIT NOT NULL DEFAULT 0,
+	mse_check_pn_thoughtcont_del_erotic BIT NOT NULL DEFAULT 0,
+	mse_check_pn_thoughtcont_del_sematic BIT NOT NULL DEFAULT 0,
+	mse_check_pn_thoughtcont_del_religous BIT NOT NULL DEFAULT 0,
+	mse_check_pn_thoughtcont_del_bizarre BIT NOT NULL DEFAULT 0,
+	ACN BIGINT NOT NULL,
+
+);
+
+CREATE TABLE Progress_Patient_Thought_Content_Overvalued_Idea_Status (
+
+	mse_check_pn_thoughtcont_ovr_paranoid BIT NOT NULL DEFAULT 0,
+	mse_check_pn_thoughtcont_ovr_control BIT NOT NULL DEFAULT 0,
+	mse_check_pn_thoughtcont_ovr_reference BIT NOT NULL DEFAULT 0,
+	mse_check_pn_thoughtcont_ovr_obsession BIT NOT NULL DEFAULT 0,
+	mse_check_pn_thoughtcont_ovr_suicidal_thought BIT NOT NULL DEFAULT 0,
+	mse_check_pn_thoughtcont_ovr_homicidal_thought BIT NOT NULL DEFAULT 0,
+	mse_check_pn_thoughtcont_ovr_no_disturbance BIT NOT NULL DEFAULT 0,
+	mse_openttxt_pn_thoughtcont_ovr_other VARCHAR(1000),
+	ACN BIGINT NOT NULL,
+);
+
+CREATE TABLE Progress_Patient_Four_Sphere_Orientation_Status (
+
+	mse_check_pn_orient_place BIT NOT NULL DEFAULT 0,	
+	mse_check_pn_orient_person BIT NOT NULL DEFAULT 0,	
+	mse_check_pn_orient_time BIT NOT NULL DEFAULT 0,
+	mse_check_pn_orient_reason_admission BIT NOT NULL DEFAULT 0,
+	mse_check_pn_orient_within_normal_limits BIT NOT NULL DEFAULT 0,
+	mse_check_pn_orient_impaired BIT NOT NULL DEFAULT 0,
+	ACN BIGINT NOT NULL,
+);
+
+CREATE TABLE Progress_Patient_Concentration_Status (
+
+mse_check_pn_conc_spell BIT NOT NULL DEFAULT 0,
+mse_check_pn_conc_serial BIT NOT NULL DEFAULT 0,
+mse_check_pn_conc_rapidcount BIT NOT NULL DEFAULT 0,
+mse_check_pn_conc_age_approp BIT NOT NULL DEFAULT 0,
+mse_check_pn_conc_within_normal_limits BIT NOT NULL DEFAULT 0,
+mse_check_pn_conc_impaired BIT NOT NULL DEFAULT 0,
+ACN BIGINT NOT NULL,
+
+);
+
+CREATE TABLE Progess_Patient_Mental_Status_Exam_Recommendation (
+
+mse_check_pn_rec_med_stabilization BIT NOT NULL DEFAULT 0,
+mse_check_pn_rec_milieu_therapy BIT NOT NULL DEFAULT 0,
+mse_check_pn_rec_med_management BIT NOT NULL DEFAULT 0,
+mse_check_pn_rec_coping_skills BIT NOT NULL DEFAULT 0,
+mse_check_pn_rec_group_therapy BIT NOT NULL DEFAULT 0,
+mse_check_pn_rec_participation BIT NOT NULL DEFAULT 0,
+mse_opentxt_pn_rec_other BIT NOT NULL DEFAULT 0,
+ACN BIGINT NOT NULL,
+);
+
+ CREATE TABLE Progress_Motor_Activity_Status (
+mse_check_pn_motor_normal BIT NOT NULL DEFAULT 0,
+mse_check_pn_motor_restless BIT NOT NULL DEFAULT 0,
+mse_check_pn_motor_hyperactive BIT NOT NULL DEFAULT 0,
+mse_checK_pn_motor_bizzare_gestures BIT NOT NULL DEFAULT 0,
+mse_check_pn_motor_mannerisms BIT NOT NULL DEFAULT 0,
+mse_check_pn_motor_stereotypes BIT NOT NULL DEFAULT 0,
+mse_check_pn_motor_posturing BIT NOT NULL DEFAULT 0,
+mse_check_pn_motor_ties BIT NOT NULL DEFAULT 0,
+mse_check_pn_motor_tremors BIT NOT NULL DEFAULT 0,
+mse_check_pn_motor_psychomotor_agitation BIT NOT NULL DEFAULT 0,
+mse_check_pn_motor_psychomotor_retardation BIT NOT NULL DEFAULT 0,
+ACN BIGINT NOT NULL,
+);
+
+CREATE TABLE Progress_Patient_Mood_Status (
+mse_check_pn_mood_tired BIT NOT NULL DEFAULT 0,
+mse_check_pn_mood_ok BIT NOT NULL DEFAULT 0,
+mse_check_pn_mood_alright BIT NOT NULL DEFAULT 0,
+mse_check_pn_mood_happy BIT NOT NULL DEFAULT 0,
+mse_check_pn_mood_good BIT NOT NULL DEFAULT 0,
+mse_check_pn_mood_sad BIT NOT NULL DEFAULT 0,
+mse_check_pn_mood_bad BIT NOT NULL DEFAULT 0,
+mse_check_pn_mood_mad BIT NOT NULL DEFAULT 0,
+mse_check_pn_mood_desperate BIT NOT NULL DEFAULT 0,
+mse_check_pn_mood_worried BIT NOT NULL DEFAULT 0,
+mse_check_pn_mood_anxious BIT NOT NULL DEFAULT 0,
+mse_check_pn_mood_angry BIT NOT NULL DEFAULT 0,
+mse_opentxt_pn_mood_other VARCHAR(1000),
+mse_check_pn_mood_patient_dna BIT NOT NULL DEFAULT 0,
+ACN BIGINT NOT NULL,
+
+);
+
+ CREATE TABLE Progress_Patient_Affect_Status (
+mse_check_pn_affect_flat BIT NOT NULL DEFAULT 0,
+mse_check_pn_affect_blunted BIT NOT NULL DEFAULT 0,
+mse_check_pn_affect_constricted BIT NOT NULL DEFAULT 0,
+mse_check_pn_affect_full_range BIT NOT NULL DEFAULT 0,
+mse_check_pn_affect_depressed BIT NOT NULL DEFAULT 0,
+mse_check_pn_affect_anxious BIT NOT NULL DEFAULT 0,
+mse_check_pn_affect_expansive BIT NOT NULL DEFAULT 0,
+mse_check_pn_affect_congruent_to_mood BIT NOT NULL DEFAULT 0,
+mse_check_pn_affect_incongruent_to_mood BIT NOT NULL DEFAULT 0,
+mse_openttxt_pn_affect_other VARCHAR(1000),
+ACN BIGINT NOT NULL,
+
+);
+
+ CREATE TABLE Progress_Patient_Thought_Process_Status (
+mse_check_pn_thoughtproc_logical BIT NOT NULL DEFAULT 0,
+mse_check_pn_thoughtproc_tangential BIT NOT NULL DEFAULT 0,
+mse_check_pn_thoughtproc_loose_associations BIT NOT NULL DEFAULT 0,
+mse_check_pn_thoughtproc_circumstantions BIT NOT NULL DEFAULT 0,
+mse_check_pn_thoughtproc_flightofideas BIT NOT NULL DEFAULT 0,
+mse_check_pn_thoughtproc_overinclusive BIT NOT NULL DEFAULT 0,
+mse_check_pn_thoughtproc_word_salad BIT NOT NULL DEFAULT 0,
+mse_check_pn_thoughtproc_thought_blocking BIT NOT NULL DEFAULT 0,
+mse_openttxt_pn_thoughtproc_other VARCHAR(1000),
+ACN BIGINT NOT NULL,
+
+);
+
+CREATE TABLE Progress_Patient_Perception_Status (
+mse_check_pn_perc_auditory BIT NOT NULL DEFAULT 0,
+mse_check_pn_perc_command BIT NOT NULL DEFAULT 0,
+mse_check_pn_perc_visual BIT NOT NULL DEFAULT 0,
+mse_check_pn_perc_tactile BIT NOT NULL DEFAULT 0,
+mse_check_pn_perc_olfactory BIT NOT NULL DEFAULT 0,
+mse_check_pn_perc_gustatory BIT NOT NULL DEFAULT 0,
+mse_check_pn_perc_illusions BIT NOT NULL DEFAULT 0,
+mse_check_pn_perc_depersoalization BIT NOT NULL DEFAULT 0,
+mse_check_pn_perc_derealization BIT NOT NULL DEFAULT 0,
+mse_check_pn_perc_no_alteration BIT NOT NULL DEFAULT 0,
+mse_openttxt_pn_perc_other VARCHAR(1000),
+ACN BIGINT NOT NULL,
+
+);
+
+ CREATE TABLE Progress_Patient_Recent_Memory_Status (
+mse_check_pn_recmem_5minrecall BIT NOT NULL DEFAULT 0,
+mse_check_pn_recmem_6digit BIT NOT NULL DEFAULT 0,
+mse_check_pn_recmem_age_approp BIT NOT NULL DEFAULT 0,
+mse_check_pn_recmem_within_normal_limits BIT NOT NULL DEFAULT 0,
+mse_check_pn_recmem_impaired BIT NOT NULL DEFAULT 0,
+ACN BIGINT NOT NULL,
+
+);
+
+CREATE TABLE Progress_Patient_Estimated_Intelligence_Status (
+mse_check_pn_estint_vocab BIT NOT NULL DEFAULT 0,
+mse_check_pn_estint_education BIT NOT NULL DEFAULT 0,
+mse_opentxt_pn_estint_other BIT NOT NULL DEFAULT 0,
+mse_check_pn_estint_above_avg BIT NOT NULL DEFAULT 0,
+mse_check_pn_estint_avg BIT NOT NULL DEFAULT 0,
+mse_check_pn_estint_below_avg BIT NOT NULL DEFAULT 0,
+ACN BIGINT NOT NULL,
+
+);
+
+
+ CREATE TABLE Progress_Patient_Remote_Memory_Status (
+mse_check_pn_rmtmem_former_pres BIT NOT NULL DEFAULT 0,
+mse_check_pn_rmtmem_age_approp BIT NOT NULL DEFAULT 0,
+mse_check_pn_rmtmem_lastnews BIT NOT NULL DEFAULT 0,
+mse_check_pn_rmtmem_citybirth BIT NOT NULL DEFAULT 0,
+mse_check_pn_rmtmem_oldschoolname BIT NOT NULL DEFAULT 0,
+mse_opentxt_pn_rmtmem_other VARCHAR(1000),
+mse_check_pn_rmtmem_within_normal_limits BIT NOT NULL DEFAULT 0,
+mse_check_pn_rmtmem_impaired BIT NOT NULL DEFAULT 0,
+ACN BIGINT NOT NULL,
+
+);
+
+ CREATE TABLE Progress_Patient_Abstract_Reasoning_Status (
+mse_check_pn_abstract_similarities BIT NOT NULL DEFAULT 0,
+mse_check_pn_abstract_proverbs BIT NOT NULL DEFAULT 0,
+mse_opentxt_pn_abstract_other VARCHAR(1000),
+mse_check_pn_abstract_within_normal_limits BIT NOT NULL DEFAULT 0,
+mse_check_pn_abstract_impaired BIT NOT NULL DEFAULT 0,
+ACN BIGINT NOT NULL,
+
+);
+
+ CREATE TABLE Progress_Medical_Diagnosis_List (
+pn_medical_dx_idcode BIT NOT NULL DEFAULT 0,
+pn_medical_dx_icd10_name BIT NOT NULL DEFAULT 0,
+ACN BIGINT NOT NULL,
+
+);
+
+CREATE TABLE Progress_Psychiatric_Diagnosis_List (
+pn_psych_dx_idcode BIT NOT NULL DEFAULT 0,
+pn_psych_dx_icd10_name BIT NOT NULL DEFAULT 0,
+ACN BIGINT NOT NULL,
+
+);
+
+ CREATE TABLE Progress_Psychiatric_Diagnosis (
+dx_pn_check_any_changes_in_dx BIT NOT NULL DEFAULT 0,
+dx_pn_psych VARCHAR(1000),
+dx_pn_medical VARCHAR (1000),
+ACN BIGINT NOT NULL,
+);
+
+ CREATE TABLE Progress_Estimated_Length_of_Stay (
+len_check_pn_less5 BIT NOT NULL DEFAULT 0,
+len_check_pn_5to7 BIT NOT NULL DEFAULT 0,
+len_check_pn_more7 BIT NOT NULL DEFAULT 0,
+len_check_pn_to_be_determined BIT NOT NULL DEFAULT 0,
+len_check_pn_other VARCHAR(1000),
+ACN BIGINT NOT NULL,
+
+);
+
+ CREATE TABLE Progress_Rationale_for_Continued_Stay (
+rcs_pn_check_medical_stabilization BIT NOT NULL DEFAULT 0,
+rcs_pn_check_milieu_therapy BIT NOT NULL DEFAULT 0,
+rcs_pn_check_suicidal_intent BIT NOT NULL DEFAULT 0,
+rcs_pn_check_homicidal_ideation BIT NOT NULL DEFAULT 0,
+rcs_pn_check_auditory_hallucinations BIT NOT NULL DEFAULT 0,
+rcs_pn_check_visual_hallucinations BIT NOT NULL DEFAULT 0,
+rcs_pn_check_depression BIT NOT NULL DEFAULT 0,
+rcs_pn_check_anxiety BIT NOT NULL DEFAULT 0,
+rcs_pn_check_mania BIT NOT NULL DEFAULT 0,
+rcs_pn_check_psychosis BIT NOT NULL DEFAULT 0,
+rcs_pn_check_irritability BIT NOT NULL DEFAULT 0,
+ACN BIGINT NOT NULL,
+
+);
+
+CREATE TABLE Progress_Plan_for_Continued_Treatment (
+pct_pn_check_medication_mgmt BIT NOT NULL DEFAULT 0,
+pct_pn_check_coping_skills BIT NOT NULL DEFAULT 0,
+pct_pn_check_group_therapy BIT NOT NULL DEFAULT 0,
+pct_pn_check_program_participation BIT NOT NULL DEFAULT 0,
+pct_pn_opentxt_other VARCHAR(1000),
+ACN BIGINT NOT NULL,
+);
+
+CREATE TABLE Progress_Stressor (
+strs_check_pn_problems_support BIT NOT NULL DEFAULT 0,
+strs_check_pn_housing_problems BIT NOT NULL DEFAULT 0,
+strs_check_pn_healthcare_problems BIT NOT NULL DEFAULT 0,
+strs_check_pn_bullying BIT NOT NULL DEFAULT 0,
+strs_check_pn_other_problems BIT NOT NULL DEFAULT 0,
+strs_check_pn_environment_problems BIT NOT NULL DEFAULT 0,
+strs_check_pn_economic_problems BIT NOT NULL DEFAULT 0,
+strs_check_pn_family_conflict BIT NOT NULL DEFAULT 0,
+strs_check_pn_legal_problems BIT NOT NULL DEFAULT 0,
+strs_check_pn_occupational_problems BIT NOT NULL DEFAULT 0,
+strs_check_pn_educational_problems BIT NOT NULL DEFAULT 0,
+strs_check_pn_social_peer_problems BIT NOT NULL DEFAULT 0,
+ACN BIGINT NOT NULL,
+);

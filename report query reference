@@ -1,0 +1,17 @@
+SELECT
+p.patient_lastname AS 'Last Name',
+p.patient_firstname AS 'First Name',
+a.ACN AS 'ACN',
+e.dx_eval_psych AS 'Psychiatric Diagnosis',
+e.dx_eval_medical AS 'Medical Diagnosis',
+prev.pph_prev_rehab_treatment AS 'Previous Rehab Location',
+r.rehab_center_idcode AS 'Rehab Center ID'
+FROM Patient_Information AS p
+INNER JOIN ACN AS a
+ON p.patient_mrn = a.patient_mrn
+INNER JOIN Evaluation_Psychiatric_Diagnosis AS e
+ON a.ACN = e.ACN
+INNER JOIN Previous_rehab_treatment AS prev
+ON a.ACN = prev.ACN
+INNER JOIN Rehab_Treatment_Center_Location_List AS r
+ON prev.pph_prev_rehab_treatment = r.rehab_center_name

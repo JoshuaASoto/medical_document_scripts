@@ -1,0 +1,10 @@
+INSERT INTO  Rehab_Treatment_Center_Location_list (rehab_center_idcode, rehab_center_name) VALUES (1, 'Perfectly Imperfect LLC');
+INSERT INTO  Rehab_Treatment_Center_Location_list (rehab_center_idcode, rehab_center_name) VALUES (2, 'First Choice Community Hlthcare Inc');
+INSERT INTO  Rehab_Treatment_Center_Location_list (rehab_center_idcode, rehab_center_name) VALUES (3, 'Zuni Recovery Center');
+INSERT INTO  Rehab_Treatment_Center_Location_list (rehab_center_idcode, rehab_center_name) VALUES (4, 'Albuquerque Health Services NW');
+INSERT INTO  Rehab_Treatment_Center_Location_list (rehab_center_idcode, rehab_center_name) VALUES (5, 'Mountain Springs Recovery');
+INSERT INTO  Rehab_Treatment_Center_Location_list (rehab_center_idcode, rehab_center_name) VALUES (6, 'ALT Recovery Group');
+INSERT INTO  Rehab_Treatment_Center_Location_list (rehab_center_idcode, rehab_center_name) VALUES (7, 'Central New Mexico Treatment Ctr');
+INSERT INTO  Rehab_Treatment_Center_Location_list (rehab_center_idcode, rehab_center_name) VALUES (8, 'Courageous Transformations Inc');
+INSERT INTO  Rehab_Treatment_Center_Location_list (rehab_center_idcode, rehab_center_name) VALUES (9, 'Duke City Recovery Toolbox LLC');
+INSERT INTO  Rehab_Treatment_Center_Location_list (rehab_center_idcode, rehab_center_name) VALUES (10, 'New Mexico Treatment Services LLC');
